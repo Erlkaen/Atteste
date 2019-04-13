@@ -1,0 +1,22 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">notBefore</th>
+          <th scope="col">notAfter</th>
+          <th scope="col">mails</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let certificat of certificats">
+          <td>{{ certificat.id }}</td>
+          <td>{{ certificat.notBefore }}</td>
+          <td>{{ certificat.notAfter }}</td>
+          <td>{{ certificat.mails }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
